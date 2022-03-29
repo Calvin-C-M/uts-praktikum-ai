@@ -1,0 +1,5 @@
+1.Tanker : Role ini memiliki tugas melindungi tim Ketika tim sedang berperang, biasanya diisi oleh tank.
+2.Offlaner : Role ini bertugas bermain di sisi exp lane dan role ini juga menjadi sebagai pengatur jalannya minion dalam permainan, biasanya diisi oleh fighter atau tank.
+3.Goldlaner : Role ini biasanya menjadi role pembunuh dalam peperangan, karena pemain yang mengisi role ini akan mendapatkan gold yg cukup banyak, biasanya diisi oleh Assasin atau Marksman.
+4.Support/Mage : Role ini memiliki tugas membantu pertahanan sekaligus penyerang tim Ketika tim sedang berperang, biasanya diisi oleh mage.
+5.Jungler : Role ini bertugas mengambil jungle dari awal permainan hingga akhir seperti buff, turtle, dan lord. Selain itu jungler juga memiliki peran sebagai ganker dalam permainan, biasanya diisi olej Assasin, Fighter, dan Marksman.
