@@ -1,22 +1,33 @@
 % Knowledge Base
 role(roamer) :-
-    ganking(yes),
-    heroType(tank).
+    retribution(no)
+    burstDamage(no)
+    aggressive(no)
+    sukaHeal(no).
 
 role(midLane) :- 
-    heroType(mage); heroType(support)
-
-role(goldLane) :- 
-    heroType(assassin); heroType(marksman)
+    retribution(no)
+    burstDamage(no)
+    aggressive(no)
+    sukaHeal(yes).
 
 role(expLane) :- 
-    heroType(fighter); heroType(tank)
+    retribution(no)
+    burstDamage(no)
+    aggressive(yes).
+
+role(goldLane) :- 
+    retribution(no)
+    burstDamage(yes).
 
 role(jungler) :- 
-    spell(retribution),
-    mengambilJungle(yes),
-    ganking(yes),
-    heroType(assassin); heroType(marksman)
+    retribution(yes).
+
+% Asking the user
+retribution(X) :- menuask('memakai retribution', X, [yes,no]).
+burstDamage(X) :- menuask('dengan hero burst damage', X, [yes,no]).
+aggressive(X) :- menuask('bermain aggressive dalam war', X, [yes,no]).
+sukaHeal(X) :- menuask('membantu heal dalam war', X, [yes,no])
 
 % Member Rules
 member(X,[X|_]).
