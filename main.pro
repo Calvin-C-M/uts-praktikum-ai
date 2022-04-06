@@ -27,7 +27,7 @@ role('Roamer') :-
 retribution(X) :- menuask('memakai retribution', X, [yes,no]).
 burstDamage(X) :- menuask('dengan hero burst damage', X, [yes,no]).
 aggressive(X) :- menuask('bermain aggresive dalam war', X, [yes,no]).
-sukaHeal(X) :- menuask('membantu heal dalam war', X, [yes,no])
+sukaHeal(X) :- menuask('membantu heal dalam war', X, [yes,no]).
 
 /* Menus for user & Remembering the answer*/
 menuask(A, V, _):-
@@ -62,7 +62,7 @@ member(X,[_|T]):-member(X,T).
 top_goal(X) :- role(X). 
 
 solve :-
-    abolish(known, 4),
+    abolish(known, 3),
     top_goal(X),
     write('Role yang cocok untuk player adalah '), write(X), nl.
 solve :-
